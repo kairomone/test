@@ -28,3 +28,26 @@ cd git <git이라는 폴더 불러오기
 git이라는 폴더 들어가서 숨길파일 보기 하면 .git이라는 폴더가 나온다
 git status < git 상태확인
 
+git add 파일이름 or *(untracked files 전체추가)
+git status < new file : 파일이름 라고 뜸
+
+git commit -m "commit message"]
+commit message에 hello world 라고 침
+하면 1file changed 라고 나옴(파일 바뀜)
+하고 git status 하면 그 파일이 안보임
+
+git log 치면 누가 언제 무엇을 커밋했는지 기록이 나온다.
+
+git remote add 원격저장소이름
+원격저장소는 github의 에서 저장소 만들면 됨
+http://github.com/kairomone/test.git
+
+git remote -v 저장소 이름이 무엇인지
+
+git push [romote-name] [branch-name]
+(git push test master)
+
+git clone [원격저장소] 저장소에 있는거 가져오기
+
+git pull [remote-name]
+최신화 하기 (clone 재사용 필요가 없어짐)
