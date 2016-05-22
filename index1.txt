@@ -1,0 +1,53 @@
+요구사항정의서 0.5
+
+글 편집 
+--
+
+
+git 버전 관리 시스템(VCS)
+3가지 종류
+1. 로컬(자신의 컴퓨터에서 문서 작업, 개인컴퓨터 저장 및 편집) -> 팀원간 협업이 불가
+
+2. 중앙집중식(중앙 서버에 모든 자료를 넣고 변경된 부분만 본인이 가지고 있는 방식) ->서버가 고장날 경우 프로젝트 진행 불가
+
+3. 분산형시스템(서버,개인컴퓨터에 자료를 가지고있는다. 작업한 내용을 서버에 변경사항을 올린다)
+
+git : 오프라인에서 사용가능
+
+3가지 디렉토리
+
+1. 자기컴퓨터에 저장하는 디렉토리
+2. 수정이 완료되어 올릴준비 하는 디렉토리
+3. git디렉토리에 올리는 디렉토리
+
+http://git-scm.com
+
+git config --global user.name "~~~"
+git config --global user.email "~~~"
+cd git <git이라는 폴더 불러오기
+git이라는 폴더 들어가서 숨길파일 보기 하면 .git이라는 폴더가 나온다
+git status < git 상태확인
+
+git add 파일이름 or *(untracked files 전체추가)
+git status < new file : 파일이름 라고 뜸
+
+git commit -m "commit message"]
+commit message에 hello world 라고 침
+하면 1file changed 라고 나옴(파일 바뀜)
+하고 git status 하면 그 파일이 안보임
+
+git log 치면 누가 언제 무엇을 커밋했는지 기록이 나온다.
+
+git remote add 원격저장소이름
+원격저장소는 github의 에서 저장소 만들면 됨
+http://github.com/kairomone/test.git
+
+git remote -v 저장소 이름이 무엇인지
+
+git push [romote-name] [branch-name]
+(git push test master)
+
+git clone [원격저장소] 저장소에 있는거 가져오기
+
+git pull [remote-name]
+최신화 하기 (clone 재사용 필요가 없어짐)
